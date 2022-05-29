@@ -1,7 +1,10 @@
 <template>
-  <Tutorial/>
+  <div>
+    <MainNav />
+    <MainControl />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
