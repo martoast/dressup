@@ -185,8 +185,8 @@ export default {
       background_options: [
         { text: "Select One", value: null },
         {
-          text: "GRAY",
-          value: "/images/background/GRAY.png",
+          text: "GREY",
+          value: "/images/background/GREY.png",
         },
         {
           text: "RED",
@@ -212,8 +212,8 @@ export default {
           value: "/images/shadow/BLOODSPLATTER.png",
         },
         {
-          text: "DEVILSTAIL",
-          value: "/images/shadow/DEVILSTAIL.png",
+          text: "DEVILTAIL",
+          value: "/images/shadow/DEVILTAIL.png",
         },
         {
           text: "NOSHADOW",

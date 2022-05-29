@@ -7,8 +7,7 @@
       id="background"
       class="background"
       center
-      src="/images/background/RED.png"
-      alt="Center image"
+      :src="form.background"
     ></b-img>
 
     <b-img
@@ -16,8 +15,7 @@
       id="shadow"
       class="shadow"
       center
-      src="/images/shadow/BLOODSPLATTER.png"
-      alt="Center image"
+      :src="form.shadow"
     ></b-img>
 
     <b-img
@@ -25,8 +23,7 @@
       id="body"
       class="body"
       center
-      src="/images/body/EASYTIGER.png"
-      alt="Center image"
+      :src="form.body"
     ></b-img>
 
     <b-img
@@ -42,9 +39,29 @@
 
 <script>
 export default {
+  data() {
+    return {
+      form: {
+        background: null,
+        shadow: null,
+        body: null,
+        necklaces: null,
+        face: null,
+        eyemakeup: null,
+        piercings: null,
+        facemarkings: null,
+        lipstick: null,
+        mouthcoverings: null,
+        sunglasses: null,
+        hair: null,
+        overthehead: null,
+      },
+    };
+  },
   methods: {
     onFormUpdate(form) {
-      console.log(form);
+      this.form = form;
+      console.log(this.form);
     },
   },
 };
