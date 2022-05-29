@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: #000 !important; height: 100vh">
     <MainNav />
     <MainControl @form="onFormUpdate" />
     <div class="parent">

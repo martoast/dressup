@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-sidebar id="sidebar-right" right title="Controls">
+    <b-sidebar id="sidebar-right" right visible>
       <div class="px-3 py-2">
         <b-container>
           <b-form>
