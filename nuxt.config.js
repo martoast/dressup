@@ -33,6 +33,7 @@ export default {
   ],
   bootstrapVue: {
     icons: true,
+    BSidebar: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
