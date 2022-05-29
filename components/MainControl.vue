@@ -2,27 +2,31 @@
   <div>
     <b-container>
       <b-form>
-        <b-form-group id="input-group-1" label="Hair:" label-for="input-1">
+        <b-form-group
+          id="input-group-1"
+          label="Background:"
+          label-for="input-1"
+        >
           <b-form-select
             id="input-1"
-            v-model="form.hair"
-            :options="hair_options"
+            v-model="form.background"
+            :options="background_options"
             required
           ></b-form-select>
         </b-form-group>
-        <b-form-group id="input-group-2" label="Eyes:" label-for="input-2">
+        <b-form-group id="input-group-2" label="Shadow:" label-for="input-2">
           <b-form-select
             id="input-2"
-            v-model="form.eyes"
-            :options="eye_options"
+            v-model="form.shadow"
+            :options="shadow_options"
             required
           ></b-form-select>
         </b-form-group>
-        <b-form-group id="input-group-3" label="Lipstick:" label-for="input-3">
+        <b-form-group id="input-group-3" label="Body:" label-for="input-3">
           <b-form-select
             id="input-3"
-            v-model="form.lipstick"
-            :options="lipstick_options"
+            v-model="form.body"
+            :options="body_options"
             required
           ></b-form-select>
         </b-form-group>
@@ -37,12 +41,87 @@ export default {
     return {
       form: {
         background: null,
+        shadow: null,
+        body: null,
+        necklaces: null,
         face: null,
-        hair: null,
-        eyes: null,
+        eyemakeup: null,
+        piercings: null,
+        facemarkings: null,
         lipstick: null,
+        mouthcoverings: null,
+        sunglasses: null,
+        hair: null,
+        overthehead: null,
       },
       hair_options: [
+        { text: "Select One", value: null },
+        {
+          text: "AERIAL",
+          value: "/images/hair/AERIAL.png",
+        },
+        {
+          text: "BEACHBUNNYBLACK",
+          value: "/images/hair/BEACHBUNNYBLACK.png",
+        },
+        {
+          text: "BEACHBUNNYBLUE",
+          value: "/images/hair/BEACHBUNNYBLUE.png",
+        },
+        {
+          text: "BEACHBUNNYRED",
+          value: "/images/hair/BEACHBUNNYRED.png",
+        },
+        {
+          text: "BEACHBUNNYWHITE",
+          value: "/images/hair/BEACHBUNNYWHITE.png",
+        },
+        {
+          text: "BLACKWAVES",
+          value: "/images/hair/BEACHBUNNYBLACKWAVES.png",
+        },
+        {
+          text: "BOB",
+          value: "/images/hair/BOB.png",
+        },
+        {
+          text: "BULLETPROOF",
+          value: "/images/hair/BULLETPROOF.png",
+        },
+        {
+          text: "CLEANCUT",
+          value: "/images/hair/CLEANCUT.png",
+        },
+        {
+          text: "CRAZYHORSEBLACK",
+          value: "/images/hair/CRAZYHORSEBLACK.png",
+        },
+        {
+          text: "CRAZYHORSEBLUE",
+          value: "/images/hair/CRAZYHORSEBLUE.png",
+        },
+        {
+          text: "CRAZYHORSEGREEN",
+          value: "/images/hair/CRAZYHORSEGREEN.png",
+        },
+        {
+          text: "CRAZYHORSEORANGE",
+          value: "/images/hair/CRAZYHORSEORANGE.png",
+        },
+        {
+          text: "CRAZYHORSEPINK",
+          value: "/images/hair/CRAZYHORSEPINK.png",
+        },
+        {
+          text: "CRAZYHORSEWHITE",
+          value: "/images/hair/CRAZYHORSEWHITE.png",
+        },
+        {
+          text: "CRAZYHORSEYELLOW",
+          value: "/images/hair/CRAZYHORSEYELLOW.png",
+        },
+      ],
+      hair_options2: [
         { text: "Select One", value: null },
         "AERIAL",
         "BEACHBUNNYBLACK",
@@ -53,7 +132,41 @@ export default {
         "BOB",
         "BULLETPROOF",
         "CLEANCUT",
-        "CRAZYHORSE",
+        "CRAZYHORSEBLACK",
+        "CRAZYHORSEBLUE",
+        "CRAZYHORSEGREEN",
+        "CRAZYHORSEORANGE",
+        "CRAZYHORSEPINK",
+        "CRAZYHORSEWHITE",
+        "CRAZYHORSEYELLOW",
+        "FRENCHIEBLACK",
+        "FRENCHIERED",
+        "GIJANE",
+        "GREYBERETTE",
+        "HARFLIP",
+        "HARLERYQ",
+        "HELMET",
+        "HELMETHAIR",
+        "LANABLACK",
+        "LANARED",
+        "LANAWHITE",
+        "MERMAIDDARK",
+        "MERMAIDWHITE",
+        "MESSY",
+        "MESSYBUN",
+        "MESSYWETHAIR",
+        "MICKEYMOUSECLUB",
+        "PIGTAILS",
+        "QUINNPIGTAILS",
+        "RAGDOLLPIGTAILS",
+        "REDBERETTE",
+        "REDBUNS",
+        "REDWAVES",
+        "REGAL",
+        "STASSI",
+        "WETHAIR",
+        "WHITEBUNS",
+        "WHITEWAVES",
       ],
       eye_options: [
         { text: "Select One", value: null },
@@ -69,6 +182,71 @@ export default {
         "Tomatoes",
         "Corn",
       ],
+      background_options: [
+        { text: "Select One", value: null },
+        {
+          text: "GRAY",
+          value: "/images/background/GRAY.png",
+        },
+        {
+          text: "RED",
+          value: "/images/background/RED.png",
+        },
+        {
+          text: "REDSPOTLIGHT",
+          value: "/images/background/REDSPOTLIGHT.png",
+        },
+        {
+          text: "WHITEPOTLIGHT",
+          value: "/images/background/WHITEPOTLIGHT.png",
+        },
+        {
+          text: "WHITE",
+          value: "/images/background/WHITE.png",
+        },
+      ],
+      shadow_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BLOODSPLATTER",
+          value: "/images/shadow/BLOODSPLATTER.png",
+        },
+        {
+          text: "DEVILSTAIL",
+          value: "/images/shadow/DEVILSTAIL.png",
+        },
+        {
+          text: "NOSHADOW",
+          value: "/images/shadow/NOSHADOW.png",
+        },
+        {
+          text: "THEDEVILYOUKNOW",
+          value: "/images/shadow/THEDEVILYOUKNOW.png",
+        },
+      ],
+      body_options: [
+        { text: "Select One", value: null },
+        {
+          text: "ATLANTIS",
+          value: "/images/body/ATLANTIS.png",
+        },
+        {
+          text: "AVATAR",
+          value: "/images/body/AVATAR.png",
+        },
+        {
+          text: "BANGBANG",
+          value: "/images/body/BANGBANG.png",
+        },
+        {
+          text: "BASEBALLRIFFLE",
+          value: "/images/body/BASEBALLRIFFLE.png",
+        },
+        {
+          text: "BATTERUP",
+          value: "/images/body/BATTERUP.png",
+        },
+      ],
       show: true,
     };
   },
@@ -77,7 +255,6 @@ export default {
     form: {
       deep: true,
       handler() {
-        console.log(this.form);
         this.$emit("form", this.form);
       },
     },

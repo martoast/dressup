@@ -1,7 +1,7 @@
 <template>
   <div>
     <MainNav />
-    <MainControl />
+    <MainControl @form="onFormUpdate" />
     <b-img
       style="height: calc(100vh - 56px)"
       id="background"
@@ -41,7 +41,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    onFormUpdate(form) {
+      console.log(form);
+    },
+  },
+};
 </script>
 <style>
 .background {
