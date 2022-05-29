@@ -1,37 +1,45 @@
 <template>
   <div>
-    <b-container>
-      <b-form>
-        <b-form-group
-          id="input-group-1"
-          label="Background:"
-          label-for="input-1"
-        >
-          <b-form-select
-            id="input-1"
-            v-model="form.background"
-            :options="background_options"
-            required
-          ></b-form-select>
-        </b-form-group>
-        <b-form-group id="input-group-2" label="Shadow:" label-for="input-2">
-          <b-form-select
-            id="input-2"
-            v-model="form.shadow"
-            :options="shadow_options"
-            required
-          ></b-form-select>
-        </b-form-group>
-        <b-form-group id="input-group-3" label="Body:" label-for="input-3">
-          <b-form-select
-            id="input-3"
-            v-model="form.body"
-            :options="body_options"
-            required
-          ></b-form-select>
-        </b-form-group>
-      </b-form>
-    </b-container>
+    <b-sidebar id="sidebar-right" right title="Controls">
+      <div class="px-3 py-2">
+        <b-container>
+          <b-form>
+            <b-form-group
+              id="input-group-1"
+              label="Background:"
+              label-for="input-1"
+            >
+              <b-form-select
+                id="input-1"
+                v-model="form.background"
+                :options="background_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+            <b-form-group
+              id="input-group-2"
+              label="Shadow:"
+              label-for="input-2"
+            >
+              <b-form-select
+                id="input-2"
+                v-model="form.shadow"
+                :options="shadow_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+            <b-form-group id="input-group-3" label="Body:" label-for="input-3">
+              <b-form-select
+                id="input-3"
+                v-model="form.body"
+                :options="body_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+          </b-form>
+        </b-container>
+      </div>
+    </b-sidebar>
   </div>
 </template>
 
