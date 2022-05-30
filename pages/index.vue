@@ -74,6 +74,14 @@
         center
         :src="form.lipstick"
       ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="mouthcoverings"
+        class="mouthcoverings"
+        center
+        :src="form.mouthcoverings"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -164,5 +172,11 @@ export default {
   position: absolute;
 
   z-index: 9;
+}
+
+.mouthcoverings {
+  position: absolute;
+
+  z-index: 10;
 }
 </style>

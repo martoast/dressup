@@ -76,7 +76,7 @@
 
             <b-form-group
               id="input-group-7"
-              label="Piercings:"
+              label="Facemarkings:"
               label-for="input-7"
             >
               <b-form-select
@@ -96,6 +96,19 @@
                 id="input-8"
                 v-model="form.lipstick"
                 :options="lipstick_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+
+            <b-form-group
+              id="input-group-9"
+              label="Mouthcoverings:"
+              label-for="input-9"
+            >
+              <b-form-select
+                id="input-9"
+                v-model="form.mouthcoverings"
+                :options="mouthcoverings_options"
                 required
               ></b-form-select>
             </b-form-group>
@@ -702,6 +715,33 @@ export default {
         {
           text: "TAUPEMATCHES",
           value: "/images/lipstick/TAUPEMATCHES.png",
+        },
+      ],
+      mouthcoverings_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BANDANABLACK",
+          value: "/images/mouthcoverings/BANDANABLACK.png",
+        },
+        {
+          text: "BANDANAGREY",
+          value: "/images/mouthcoverings/BANDANAGREY.png",
+        },
+        {
+          text: "BANDANARED",
+          value: "/images/mouthcoverings/BANDANARED.png",
+        },
+        {
+          text: "BLOODYLIP",
+          value: "/images/mouthcoverings/BLOODYLIP.png",
+        },
+        {
+          text: "FACEMASK",
+          value: "/images/mouthcoverings/FACEMASK.png",
+        },
+        {
+          text: "NOMOUTHCOVERING",
+          value: "/images/mouthcoverings/NOMOUTHCOVERING.png",
         },
       ],
       show: true,
