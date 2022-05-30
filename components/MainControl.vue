@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-sidebar id="sidebar-right" right visible>
-      <div class="px-3 py-2">
+    <b-sidebar id="sidebar-right" right visible no-header>
+      <div class="px-3 py-4">
         <b-container>
           <b-form>
             <b-form-group
@@ -57,6 +57,19 @@
                 id="input-5"
                 v-model="form.eyemakeup"
                 :options="eyemakeup_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+
+            <b-form-group
+              id="input-group-6"
+              label="Piercings:"
+              label-for="input-6"
+            >
+              <b-form-select
+                id="input-6"
+                v-model="form.piercings"
+                :options="piercings_options"
                 required
               ></b-form-select>
             </b-form-group>
@@ -473,6 +486,25 @@ export default {
         {
           text: "WINK",
           value: "/images/eyemakeup/WINK.png",
+        },
+      ],
+      piercings_options: [
+        { text: "Select One", value: null },
+        {
+          text: "NOPIERCINGS",
+          value: "/images/piercings/NOPIERCINGS.png",
+        },
+        {
+          text: "NOSTRIL",
+          value: "/images/piercings/NOSTRIL.png",
+        },
+        {
+          text: "SEPTUM",
+          value: "/images/piercings/SEPTUM.png",
+        },
+        {
+          text: "SIDELABARETE",
+          value: "/images/piercings/SIDELABARETE.png",
         },
       ],
       show: true,

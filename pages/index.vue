@@ -51,6 +51,14 @@
         center
         :src="form.eyemakeup"
       ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="piercings"
+        class="piercings"
+        center
+        :src="form.piercings"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -124,5 +132,11 @@ export default {
   position: absolute;
 
   z-index: 6;
+}
+
+.piercings {
+  position: absolute;
+
+  z-index: 7;
 }
 </style>
