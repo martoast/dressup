@@ -73,6 +73,19 @@
                 required
               ></b-form-select>
             </b-form-group>
+
+            <b-form-group
+              id="input-group-7"
+              label="Piercings:"
+              label-for="input-7"
+            >
+              <b-form-select
+                id="input-7"
+                v-model="form.facemarkings"
+                :options="facemarkings_options"
+                required
+              ></b-form-select>
+            </b-form-group>
           </b-form>
         </b-container>
       </div>
@@ -505,6 +518,41 @@ export default {
         {
           text: "SIDELABARETE",
           value: "/images/piercings/SIDELABARETE.png",
+        },
+      ],
+      facemarkings_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BEAUTYMARK",
+          value: "/images/facemarkings/BEAUTYMARK.png",
+        },
+        {
+          text: "FRECKLES",
+          value: "/images/facemarkings/FRECKLES.png",
+        },
+        {
+          text: "HEARTTATTOO",
+          value: "/images/facemarkings/HEARTTATTOO.png",
+        },
+        {
+          text: "KATVOND",
+          value: "/images/facemarkings/KATVOND.png",
+        },
+        {
+          text: "LIPBEAUTYMARK",
+          value: "/images/facemarkings/LIPBEAUTYMARK.png",
+        },
+        {
+          text: "NOFACEMARK",
+          value: "/images/facemarkings/NOFACEMARK.png",
+        },
+        {
+          text: "SPRINKLES",
+          value: "/images/facemarkings/SPRINKLES.png",
+        },
+        {
+          text: "TEARTATTOO",
+          value: "/images/facemarkings/TEARTATTOO.png",
         },
       ],
       show: true,

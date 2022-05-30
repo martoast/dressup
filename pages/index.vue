@@ -59,6 +59,13 @@
         center
         :src="form.piercings"
       ></b-img>
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="facemarkings"
+        class="facemarkings"
+        center
+        :src="form.facemarkings"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -138,5 +145,10 @@ export default {
   position: absolute;
 
   z-index: 7;
+}
+.facemarkings {
+  position: absolute;
+
+  z-index: 8;
 }
 </style>
