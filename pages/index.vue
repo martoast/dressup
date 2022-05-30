@@ -89,6 +89,22 @@
         center
         :src="form.sunglasses"
       ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="hair"
+        class="hair"
+        center
+        :src="form.hair"
+      ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="overthehead"
+        class="overthehead"
+        center
+        :src="form.overthehead"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -191,5 +207,17 @@ export default {
   position: absolute;
 
   z-index: 11;
+}
+
+.hair {
+  position: absolute;
+
+  z-index: 12;
+}
+
+.overthehead {
+  position: absolute;
+
+  z-index: 13;
 }
 </style>

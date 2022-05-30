@@ -133,6 +133,32 @@
                 required
               ></b-form-select>
             </b-form-group>
+
+            <b-form-group
+              id="input-group-12"
+              label="Hair:"
+              label-for="input-12"
+            >
+              <b-form-select
+                id="input-12"
+                v-model="form.hair"
+                :options="hair_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+
+            <b-form-group
+              id="input-group-12"
+              label="Over the head:"
+              label-for="input-13"
+            >
+              <b-form-select
+                id="input-13"
+                v-model="form.overthehead"
+                :options="overthehead_options"
+                required
+              ></b-form-select>
+            </b-form-group>
           </b-form>
         </b-container>
       </div>
@@ -159,123 +185,9 @@ export default {
         hair: null,
         overthehead: null,
       },
-      hair_options: [
-        { text: "Select One", value: null },
-        {
-          text: "AERIAL",
-          value: "/images/hair/AERIAL.png",
-        },
-        {
-          text: "BEACHBUNNYBLACK",
-          value: "/images/hair/BEACHBUNNYBLACK.png",
-        },
-        {
-          text: "BEACHBUNNYBLUE",
-          value: "/images/hair/BEACHBUNNYBLUE.png",
-        },
-        {
-          text: "BEACHBUNNYRED",
-          value: "/images/hair/BEACHBUNNYRED.png",
-        },
-        {
-          text: "BEACHBUNNYWHITE",
-          value: "/images/hair/BEACHBUNNYWHITE.png",
-        },
-        {
-          text: "BLACKWAVES",
-          value: "/images/hair/BEACHBUNNYBLACKWAVES.png",
-        },
-        {
-          text: "BOB",
-          value: "/images/hair/BOB.png",
-        },
-        {
-          text: "BULLETPROOF",
-          value: "/images/hair/BULLETPROOF.png",
-        },
-        {
-          text: "CLEANCUT",
-          value: "/images/hair/CLEANCUT.png",
-        },
-        {
-          text: "CRAZYHORSEBLACK",
-          value: "/images/hair/CRAZYHORSEBLACK.png",
-        },
-        {
-          text: "CRAZYHORSEBLUE",
-          value: "/images/hair/CRAZYHORSEBLUE.png",
-        },
-        {
-          text: "CRAZYHORSEGREEN",
-          value: "/images/hair/CRAZYHORSEGREEN.png",
-        },
-        {
-          text: "CRAZYHORSEORANGE",
-          value: "/images/hair/CRAZYHORSEORANGE.png",
-        },
-        {
-          text: "CRAZYHORSEPINK",
-          value: "/images/hair/CRAZYHORSEPINK.png",
-        },
-        {
-          text: "CRAZYHORSEWHITE",
-          value: "/images/hair/CRAZYHORSEWHITE.png",
-        },
-        {
-          text: "CRAZYHORSEYELLOW",
-          value: "/images/hair/CRAZYHORSEYELLOW.png",
-        },
-      ],
-      hair_options2: [
-        { text: "Select One", value: null },
-        "AERIAL",
-        "BEACHBUNNYBLACK",
-        "BEACHNUNNYBLUE",
-        "BEACHNUNNYRED",
-        "BEACHNUNNYWHITE",
-        "BLACKWAVES",
-        "BOB",
-        "BULLETPROOF",
-        "CLEANCUT",
-        "CRAZYHORSEBLACK",
-        "CRAZYHORSEBLUE",
-        "CRAZYHORSEGREEN",
-        "CRAZYHORSEORANGE",
-        "CRAZYHORSEPINK",
-        "CRAZYHORSEWHITE",
-        "CRAZYHORSEYELLOW",
-        "FRENCHIEBLACK",
-        "FRENCHIERED",
-        "GIJANE",
-        "GREYBERETTE",
-        "HARFLIP",
-        "HARLERYQ",
-        "HELMET",
-        "HELMETHAIR",
-        "LANABLACK",
-        "LANARED",
-        "LANAWHITE",
-        "MERMAIDDARK",
-        "MERMAIDWHITE",
-        "MESSY",
-        "MESSYBUN",
-        "MESSYWETHAIR",
-        "MICKEYMOUSECLUB",
-        "PIGTAILS",
-        "QUINNPIGTAILS",
-        "RAGDOLLPIGTAILS",
-        "REDBERETTE",
-        "REDBUNS",
-        "REDWAVES",
-        "REGAL",
-        "STASSI",
-        "WETHAIR",
-        "WHITEBUNS",
-        "WHITEWAVES",
-      ],
 
       background_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "GREY",
           value: "/images/background/GREY.png",
@@ -298,7 +210,7 @@ export default {
         },
       ],
       shadow_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BLOODSPLATTER",
           value: "/images/shadow/BLOODSPLATTER.png",
@@ -317,7 +229,7 @@ export default {
         },
       ],
       body_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "ATLANTIS",
           value: "/images/body/ATLANTIS.png",
@@ -420,7 +332,7 @@ export default {
         },
       ],
       necklaces_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BUNNYNECKTIE",
           value: "/images/necklaces/BUNNYNECKTIE.png",
@@ -470,8 +382,8 @@ export default {
           value: "/images/necklaces/LONGNECKLACES.png",
         },
         {
-          text: "NONECKLACES",
-          value: "/images/necklaces/NONECKLACES.png",
+          text: "Select oneCKLACES",
+          value: "/images/necklaces/Select oneCKLACES.png",
         },
         {
           text: "ROPE",
@@ -491,7 +403,7 @@ export default {
         },
       ],
       faces_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BUSHYEYEBROWS",
           value: "/images/face/BUSHYEYEBROWS.png",
@@ -502,7 +414,7 @@ export default {
         },
       ],
       eyemakeup_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BULLSEYE",
           value: "/images/eyemakeup/BULLSEYE.png",
@@ -553,7 +465,7 @@ export default {
         },
       ],
       piercings_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "NOPIERCINGS",
           value: "/images/piercings/NOPIERCINGS.png",
@@ -572,7 +484,7 @@ export default {
         },
       ],
       facemarkings_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BEAUTYMARK",
           value: "/images/facemarkings/BEAUTYMARK.png",
@@ -607,7 +519,7 @@ export default {
         },
       ],
       lipstick_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BEAUTYMARK",
           value: "/images/lipstick/BUBBLEGUM.png",
@@ -750,7 +662,7 @@ export default {
         },
       ],
       mouthcoverings_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "BANDANABLACK",
           value: "/images/mouthcoverings/BANDANABLACK.png",
@@ -777,7 +689,7 @@ export default {
         },
       ],
       sunglasses_options: [
-        { text: "Select One", value: null },
+        { text: "Select one", value: null },
         {
           text: "AVIATOR",
           value: "/images/sunglasses/AVIATOR.png",
@@ -827,6 +739,202 @@ export default {
           value: "/images/sunglasses/VINTAGE.png",
         },
       ],
+      hair_options: [
+        { text: "Select one", value: null },
+        {
+          text: "ARIEL",
+          value: "/images/hair/ARIEL.png",
+        },
+        {
+          text: "BEACHBUNNYBLACK",
+          value: "/images/hair/BEACHBUNNYBLACK.png",
+        },
+        {
+          text: "BEACHBUNNYBLUE",
+          value: "/images/hair/BEACHBUNNYBLUE.png",
+        },
+        {
+          text: "BEACHBUNNYRED",
+          value: "/images/hair/BEACHBUNNYRED.png",
+        },
+        {
+          text: "BEACHBUNNYWHITE",
+          value: "/images/hair/BEACHBUNNYWHITE.png",
+        },
+        {
+          text: "BLACKWAVES",
+          value: "/images/hair/BEACHBUNNYBLACKWAVES.png",
+        },
+        {
+          text: "BOB",
+          value: "/images/hair/BOB.png",
+        },
+        {
+          text: "BULLETPROOF",
+          value: "/images/hair/BULLETPROOF.png",
+        },
+        {
+          text: "CLEANCUT",
+          value: "/images/hair/CLEANCUT.png",
+        },
+        {
+          text: "CRAZYHORSEBLACK",
+          value: "/images/hair/CRAZYHORSEBLACK.png",
+        },
+        {
+          text: "CRAZYHORSEBLUE",
+          value: "/images/hair/CRAZYHORSEBLUE.png",
+        },
+        {
+          text: "CRAZYHORSEGREEN",
+          value: "/images/hair/CRAZYHORSEGREEN.png",
+        },
+        {
+          text: "CRAZYHORSEORANGE",
+          value: "/images/hair/CRAZYHORSEORANGE.png",
+        },
+        {
+          text: "CRAZYHORSEPINK",
+          value: "/images/hair/CRAZYHORSEPINK.png",
+        },
+        {
+          text: "CRAZYHORSEWHITE",
+          value: "/images/hair/CRAZYHORSEWHITE.png",
+        },
+        {
+          text: "CRAZYHORSEYELLOW",
+          value: "/images/hair/CRAZYHORSEYELLOW.png",
+        },
+        {
+          text: "FRENCHIEBLACK",
+          value: "/images/hair/FRENCHIEBLACK.png",
+        },
+        {
+          text: "FRENCHIERED",
+          value: "/images/hair/FRENCHIERED.png",
+        },
+        {
+          text: "GIJANE",
+          value: "/images/hair/GIJANE.png",
+        },
+        {
+          text: "GREYBERETTE",
+          value: "/images/hair/GREYBERETTE.png",
+        },
+        {
+          text: "HAIRFLIP",
+          value: "/images/hair/HAIRFLIP.png",
+        },
+        {
+          text: "HARLEYQ",
+          value: "/images/hair/HAIRFLIP.png",
+        },
+        {
+          text: "HELMET",
+          value: "/images/hair/HELMET.png",
+        },
+        {
+          text: "HELMETHAIR",
+          value: "/images/hair/HELMETHAIR.png",
+        },
+        {
+          text: "LANABLACK",
+          value: "/images/hair/LANABLACK.png",
+        },
+        {
+          text: "LANARED",
+          value: "/images/hair/LANARED.png",
+        },
+        {
+          text: "LANAWHITE",
+          value: "/images/hair/LANAWHITE.png",
+        },
+        {
+          text: "MERMAIDDARK",
+          value: "/images/hair/MERMAIDDARK.png",
+        },
+        {
+          text: "MERMAIDWHITE",
+          value: "/images/hair/MERMAIDWHITE.png",
+        },
+        {
+          text: "MESSY",
+          value: "/images/hair/MESSY.png",
+        },
+        {
+          text: "MESSY",
+          value: "/images/hair/MESSY.png",
+        },
+        {
+          text: "MESSYBUN",
+          value: "/images/hair/MESSYBUN.png",
+        },
+        {
+          text: "MESSYWETHAIR",
+          value: "/images/hair/MESSYWETHAIR.png",
+        },
+        {
+          text: "MICKEYMOUSECLUB",
+          value: "/images/hair/MICKEYMOUSECLUB.png",
+        },
+        {
+          text: "PIGTAILS",
+          value: "/images/hair/PIGTAILS.png",
+        },
+        {
+          text: "QUINNPIGTAILS",
+          value: "/images/hair/QUINNPIGTAILS.png",
+        },
+        {
+          text: "RAGDOLLPIGTAILS",
+          value: "/images/hair/RAGDOLLPIGTAILS.png",
+        },
+        {
+          text: "REDBERETTE",
+          value: "/images/hair/REDBERETTE.png",
+        },
+        {
+          text: "REDBUNS",
+          value: "/images/hair/REDBUNS.png",
+        },
+        {
+          text: "REDWAVES",
+          value: "/images/hair/REDWAVES.png",
+        },
+        {
+          text: "REGAL",
+          value: "/images/hair/REGAL.png",
+        },
+        {
+          text: "STASSI",
+          value: "/images/hair/STASSI.png",
+        },
+        {
+          text: "WETHAIR",
+          value: "/images/hair/WETHAIR.png",
+        },
+        {
+          text: "WHITEBUNS",
+          value: "/images/hair/WHITEBUNS.png",
+        },
+        {
+          text: "WHITEWAVES",
+          value: "/images/hair/WHITEWAVES.png",
+        },
+      ],
+
+      overthehead_options: [
+        { text: "Select one", value: null },
+        {
+          text: "HALO",
+          value: "/images/overthehead/HALO.png",
+        },
+        {
+          text: "NOHALO",
+          value: "/images/overthehead/NOHALO.png",
+        },
+      ],
+
       show: true,
     };
   },
