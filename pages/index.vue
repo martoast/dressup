@@ -29,6 +29,14 @@
 
       <b-img
         style="height: calc(100vh - 56px)"
+        id="necklaces"
+        class="necklaces"
+        center
+        :src="form.necklaces"
+      ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
         id="face"
         class="face"
         center
@@ -93,9 +101,15 @@ export default {
   z-index: 3;
 }
 
-.face {
+.necklaces {
   position: absolute;
 
   z-index: 4;
+}
+
+.face {
+  position: absolute;
+
+  z-index: 5;
 }
 </style>

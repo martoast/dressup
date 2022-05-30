@@ -36,6 +36,18 @@
                 required
               ></b-form-select>
             </b-form-group>
+            <b-form-group
+              id="input-group-4"
+              label="Necklaces:"
+              label-for="input-4"
+            >
+              <b-form-select
+                id="input-4"
+                v-model="form.necklaces"
+                :options="necklaces_options"
+                required
+              ></b-form-select>
+            </b-form-group>
           </b-form>
         </b-container>
       </div>
@@ -333,6 +345,77 @@ export default {
         {
           text: "HARNESSTHEPOWER",
           value: "/images/body/HARNESSTHEPOWER.png",
+        },
+      ],
+      necklaces_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BUNNYNECKTIE",
+          value: "/images/necklaces/BUNNYNECKTIE.png",
+        },
+        {
+          text: "CHAIN",
+          value: "/images/necklaces/CHAIN.png",
+        },
+        {
+          text: "CHAINGOLD",
+          value: "/images/necklaces/CHAINGOLD.png",
+        },
+        {
+          text: "CHOKER",
+          value: "/images/necklaces/CHOKER.png",
+        },
+        {
+          text: "CHOKERBLACK",
+          value: "/images/necklaces/CHOKERBLACK.png",
+        },
+        {
+          text: "CHOKERBLACKONELOOP",
+          value: "/images/necklaces/CHOKERBLACKONELOOP.png",
+        },
+        {
+          text: "CHOKERBLACKRING",
+          value: "/images/necklaces/CHOKERBLACKRING.png",
+        },
+        {
+          text: "CHOKERBLACKTWOLOOPS",
+          value: "/images/necklaces/CHOKERBLACKTWOLOOPS.png",
+        },
+        {
+          text: "CHOKERPINK",
+          value: "/images/necklaces/CHOKERPINK.png",
+        },
+        {
+          text: "CHOKERRED",
+          value: "/images/necklaces/CHOKERRED.png",
+        },
+        {
+          text: "CHOKEWHITE",
+          value: "/images/necklaces/CHOKERWHITE.png",
+        },
+        {
+          text: "LONGNECKLACES",
+          value: "/images/necklaces/LONGNECKLACES.png",
+        },
+        {
+          text: "NONECKLACES",
+          value: "/images/necklaces/NONECKLACES.png",
+        },
+        {
+          text: "ROPE",
+          value: "/images/necklaces/ROPE.png",
+        },
+        {
+          text: "SHORTNECKLACES",
+          value: "/images/necklaces/SHORTNECKLACES.png",
+        },
+        {
+          text: "THREENECKLACES",
+          value: "/images/necklaces/THREENECKLACES.png",
+        },
+        {
+          text: "TWOENECKLACES",
+          value: "/images/necklaces/TWONECKLACES.png",
         },
       ],
       show: true,
