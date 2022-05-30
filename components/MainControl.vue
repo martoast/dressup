@@ -48,13 +48,21 @@
                 required
               ></b-form-select>
             </b-form-group>
-            <b-form-group
-              id="input-group-5"
-              label="Eyemakeup:"
-              label-for="input-5"
-            >
+            <b-form-group id="input-group-5" label="Faces:" label-for="input-5">
               <b-form-select
                 id="input-5"
+                v-model="form.face"
+                :options="faces_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+            <b-form-group
+              id="input-group-6"
+              label="Eyemakeup:"
+              label-for="input-6"
+            >
+              <b-form-select
+                id="input-6"
                 v-model="form.eyemakeup"
                 :options="eyemakeup_options"
                 required
@@ -62,12 +70,12 @@
             </b-form-group>
 
             <b-form-group
-              id="input-group-6"
+              id="input-group-7"
               label="Piercings:"
-              label-for="input-6"
+              label-for="input-7"
             >
               <b-form-select
-                id="input-6"
+                id="input-7"
                 v-model="form.piercings"
                 :options="piercings_options"
                 required
@@ -75,12 +83,12 @@
             </b-form-group>
 
             <b-form-group
-              id="input-group-7"
+              id="input-group-8"
               label="Facemarkings:"
-              label-for="input-7"
+              label-for="input-8"
             >
               <b-form-select
-                id="input-7"
+                id="input-8"
                 v-model="form.facemarkings"
                 :options="facemarkings_options"
                 required
@@ -88,12 +96,12 @@
             </b-form-group>
 
             <b-form-group
-              id="input-group-8"
+              id="input-group-9"
               label="Lipstick:"
-              label-for="input-8"
+              label-for="input-9"
             >
               <b-form-select
-                id="input-8"
+                id="input-9"
                 v-model="form.lipstick"
                 :options="lipstick_options"
                 required
@@ -101,14 +109,27 @@
             </b-form-group>
 
             <b-form-group
-              id="input-group-9"
+              id="input-group-10"
               label="Mouthcoverings:"
-              label-for="input-9"
+              label-for="input-10"
             >
               <b-form-select
-                id="input-9"
+                id="input-10"
                 v-model="form.mouthcoverings"
                 :options="mouthcoverings_options"
+                required
+              ></b-form-select>
+            </b-form-group>
+
+            <b-form-group
+              id="input-group-11"
+              label="Sunglasses:"
+              label-for="input-11"
+            >
+              <b-form-select
+                id="input-11"
+                v-model="form.sunglasses"
+                :options="sunglasses_options"
                 required
               ></b-form-select>
             </b-form-group>
@@ -469,6 +490,17 @@ export default {
           value: "/images/necklaces/TWONECKLACES.png",
         },
       ],
+      faces_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BUSHYEYEBROWS",
+          value: "/images/face/BUSHYEYEBROWS.png",
+        },
+        {
+          text: "MANICUREDBROWS",
+          value: "/images/face/MANICUREDBROWS.png",
+        },
+      ],
       eyemakeup_options: [
         { text: "Select One", value: null },
         {
@@ -742,6 +774,57 @@ export default {
         {
           text: "NOMOUTHCOVERING",
           value: "/images/mouthcoverings/NOMOUTHCOVERING.png",
+        },
+      ],
+      sunglasses_options: [
+        { text: "Select One", value: null },
+        {
+          text: "AVIATOR",
+          value: "/images/sunglasses/AVIATOR.png",
+        },
+        {
+          text: "BLUEHEARTS",
+          value: "/images/sunglasses/BLUEHEARTS.png",
+        },
+        {
+          text: "CATEYE",
+          value: "/images/sunglasses/CATEYE.png",
+        },
+        {
+          text: "CLEARGLASSES",
+          value: "/images/sunglasses/CLEARGLASSES.png",
+        },
+        {
+          text: "CLEARPINK",
+          value: "/images/sunglasses/CLEARPINK.png",
+        },
+        {
+          text: "FUTURE",
+          value: "/images/sunglasses/FUTURE.png",
+        },
+        {
+          text: "HARRY-POTTER",
+          value: "/images/sunglasses/HARRY-POTTER.png",
+        },
+        {
+          text: "NOGLASSES",
+          value: "/images/sunglasses/NOGLASSES.png",
+        },
+        {
+          text: "PINKHEARTS",
+          value: "/images/sunglasses/PINKHEARTS.png",
+        },
+        {
+          text: "PIRATE",
+          value: "/images/sunglasses/PIRATE.png",
+        },
+        {
+          text: "SPARKLER",
+          value: "/images/sunglasses/SPARKLER.png",
+        },
+        {
+          text: "VINTAGE",
+          value: "/images/sunglasses/VINTAGE.png",
         },
       ],
       show: true,

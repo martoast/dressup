@@ -40,8 +40,7 @@
         id="face"
         class="face"
         center
-        src="/images/face/BUSHYEYEBROWS.png"
-        alt="Center image"
+        :src="form.face"
       ></b-img>
 
       <b-img
@@ -81,6 +80,14 @@
         class="mouthcoverings"
         center
         :src="form.mouthcoverings"
+      ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="sunglasses"
+        class="sunglasses"
+        center
+        :src="form.sunglasses"
       ></b-img>
     </div>
   </div>
@@ -178,5 +185,11 @@ export default {
   position: absolute;
 
   z-index: 10;
+}
+
+.sunglasses {
+  position: absolute;
+
+  z-index: 11;
 }
 </style>
