@@ -254,6 +254,86 @@ export default {
           text: "BATTERUP",
           value: "/images/body/BATTERUP.png",
         },
+        {
+          text: "BAZUCA",
+          value: "/images/body/BAZUCA.png",
+        },
+        {
+          text: "BLACKLIGHTER",
+          value: "/images/body/BLACKLIGHTER.png",
+        },
+        {
+          text: "BLACKLONGSLV",
+          value: "/images/body/BLACKLONGSLV.png",
+        },
+        {
+          text: "BLACKMONEYGUN",
+          value: "/images/body/BLACKMONEYGUN.png",
+        },
+        {
+          text: "BLOODYHELL",
+          value: "/images/body/BLOODYHELL.png",
+        },
+        {
+          text: "BULLETPROOF",
+          value: "/images/body/BULLETPROOF.png",
+        },
+        {
+          text: "BURNTHEEVIDENCE",
+          value: "/images/body/BURNTHEEVIDENCE.png",
+        },
+        {
+          text: "BURNTHEHOUSEDOWN",
+          value: "/images/body/BURNTHEHOUSEDOWN.png",
+        },
+        {
+          text: "DEALERSCHOICE",
+          value: "/images/body/DEALERSCHOICE.png",
+        },
+        {
+          text: "DESTINATIONHEIST",
+          value: "/images/body/DESTINATIONHEIST.png",
+        },
+        {
+          text: "DOMINATRIX",
+          value: "/images/body/DOMINATRIX.png",
+        },
+        {
+          text: "EASYTIGER",
+          value: "/images/body/EASYTIGER.png",
+        },
+        {
+          text: "FINEACCESORY",
+          value: "/images/body/FINEACCESORY.png",
+        },
+        {
+          text: "FIRSTDATE",
+          value: "/images/body/FIRSTDATE.png",
+        },
+        {
+          text: "GLOVESWITHLIPSTICK",
+          value: "/images/body/GLOVESWITHLIPSTICK.png",
+        },
+        {
+          text: "GODSAVETHEQUEEN",
+          value: "/images/body/GODSAVETHEQUEEN.png",
+        },
+        {
+          text: "GOTTHEMONEY",
+          value: "/images/body/GOTTHEMONEY.png",
+        },
+        {
+          text: "GREYBLAZER",
+          value: "/images/body/GREYBLAZER.png",
+        },
+        {
+          text: "HARNESS",
+          value: "/images/body/HARNESS.png",
+        },
+        {
+          text: "HARNESSTHEPOWER",
+          value: "/images/body/HARNESSTHEPOWER.png",
+        },
       ],
       show: true,
     };
