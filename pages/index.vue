@@ -66,6 +66,14 @@
         center
         :src="form.facemarkings"
       ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="lipstick"
+        class="lipstick"
+        center
+        :src="form.lipstick"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -150,5 +158,11 @@ export default {
   position: absolute;
 
   z-index: 8;
+}
+
+.lipstick {
+  position: absolute;
+
+  z-index: 9;
 }
 </style>

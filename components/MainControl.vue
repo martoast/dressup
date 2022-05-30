@@ -86,6 +86,19 @@
                 required
               ></b-form-select>
             </b-form-group>
+
+            <b-form-group
+              id="input-group-8"
+              label="Lipstick:"
+              label-for="input-8"
+            >
+              <b-form-select
+                id="input-8"
+                v-model="form.lipstick"
+                :options="lipstick_options"
+                required
+              ></b-form-select>
+            </b-form-group>
           </b-form>
         </b-container>
       </div>
@@ -227,13 +240,6 @@ export default {
         "WHITEWAVES",
       ],
 
-      lipstick_options: [
-        { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
       background_options: [
         { text: "Select One", value: null },
         {
@@ -553,6 +559,149 @@ export default {
         {
           text: "TEARTATTOO",
           value: "/images/facemarkings/TEARTATTOO.png",
+        },
+      ],
+      lipstick_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BEAUTYMARK",
+          value: "/images/lipstick/BUBBLEGUM.png",
+        },
+        {
+          text: "BURGUNDYBULLET",
+          value: "/images/lipstick/BURGUNDYBULLET.png",
+        },
+        {
+          text: "BURGUNDYCIGAR",
+          value: "/images/lipstick/BURGUNDYCIGAR.png",
+        },
+        {
+          text: "BURGUNDYCIGARETTE",
+          value: "/images/lipstick/BURGUNDYCIGARETTE.png",
+        },
+        {
+          text: "BURGUNDYGROWL",
+          value: "/images/lipstick/BURGUNDYGROWL.png",
+        },
+        {
+          text: "BURGUNDYHAPPY",
+          value: "/images/lipstick/BURGUNDYGROWL.png",
+        },
+        {
+          text: "BURGUNDYMATCHES",
+          value: "/images/lipstick/BURGUNDYMATCHES.png",
+        },
+        {
+          text: "BURGUNDYVAMP",
+          value: "/images/lipstick/BURGUNDYVAMP.png",
+        },
+        {
+          text: "GREYGROWL",
+          value: "/images/lipstick/GREYGROWL.png",
+        },
+        {
+          text: "LIPKIT",
+          value: "/images/lipstick/LIPKIT.png",
+        },
+        {
+          text: "LIPKITMATCHES",
+          value: "/images/lipstick/LIPKITMATCHES.png",
+        },
+        {
+          text: "PILLOWTALK",
+          value: "/images/lipstick/PILLOWTALK.png",
+        },
+        {
+          text: "PILLOWTALKCIGAR",
+          value: "/images/lipstick/PILLOWTALKCIGAR.png",
+        },
+        {
+          text: "PILLOWTALKCIGARETTE",
+          value: "/images/lipstick/PILLOWTALKCIGARETTE.png",
+        },
+        {
+          text: "PILLOWTALKGROWL",
+          value: "/images/lipstick/PILLOWTALKGROWL.png",
+        },
+        {
+          text: "PILLOWTALKHAPPY",
+          value: "/images/lipstick/PILLOWTALKHAPPY.png",
+        },
+        {
+          text: "PILLOWTALKMATCHES",
+          value: "/images/lipstick/PILLOWTALKMATCHES.png",
+        },
+        {
+          text: "REDBULLET",
+          value: "/images/lipstick/REDBULLET.png",
+        },
+        {
+          text: "REDGROWL",
+          value: "/images/lipstick/REDGROWL.png",
+        },
+        {
+          text: "REDLIPS",
+          value: "/images/lipstick/REDLIPS.png",
+        },
+        {
+          text: "REDVAMP",
+          value: "/images/lipstick/REDVAMP.png",
+        },
+        {
+          text: "SHINYRED",
+          value: "/images/lipstick/SHINYRED.png",
+        },
+        {
+          text: "SHINYREDCIGAR",
+          value: "/images/lipstick/SHINYREDCIGAR.png",
+        },
+        {
+          text: "SHINYREDCIGAR",
+          value: "/images/lipstick/SHINYREDCIGAR.png",
+        },
+        {
+          text: "SHINYREDCIGARETTE",
+          value: "/images/lipstick/SHINYREDCIGARETTE.png",
+        },
+        {
+          text: "SHINYREDHAPPY",
+          value: "/images/lipstick/SHINYREDHAPPY.png",
+        },
+        {
+          text: "SHINYREDMATCHES",
+          value: "/images/lipstick/SHINYREDMATCHES.png",
+        },
+        {
+          text: "SIREN",
+          value: "/images/lipstick/SIREN.png",
+        },
+        {
+          text: "SIRENGROWL",
+          value: "/images/lipstick/SIRENGROWL.png",
+        },
+        {
+          text: "SIRENMATCHES",
+          value: "/images/lipstick/SIRENMATCHES.png",
+        },
+        {
+          text: "TAUPEBULLET",
+          value: "/images/lipstick/TAUPEBULLET.png",
+        },
+        {
+          text: "TAUPECIGAR",
+          value: "/images/lipstick/TAUPECIGAR.png",
+        },
+        {
+          text: "TAUPECIGARETTE",
+          value: "/images/lipstick/TAUPECIGARETTE.png",
+        },
+        {
+          text: "TAUPEHAPPY",
+          value: "/images/lipstick/TAUPEHAPPY.png",
+        },
+        {
+          text: "TAUPEMATCHES",
+          value: "/images/lipstick/TAUPEMATCHES.png",
         },
       ],
       show: true,
