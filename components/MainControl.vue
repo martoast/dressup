@@ -48,6 +48,18 @@
                 required
               ></b-form-select>
             </b-form-group>
+            <b-form-group
+              id="input-group-5"
+              label="Eyemakeup:"
+              label-for="input-5"
+            >
+              <b-form-select
+                id="input-5"
+                v-model="form.eyemakeup"
+                :options="eyemakeup_options"
+                required
+              ></b-form-select>
+            </b-form-group>
           </b-form>
         </b-container>
       </div>
@@ -188,13 +200,7 @@ export default {
         "WHITEBUNS",
         "WHITEWAVES",
       ],
-      eye_options: [
-        { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
+
       lipstick_options: [
         { text: "Select One", value: null },
         "Carrots",
@@ -416,6 +422,57 @@ export default {
         {
           text: "TWOENECKLACES",
           value: "/images/necklaces/TWONECKLACES.png",
+        },
+      ],
+      eyemakeup_options: [
+        { text: "Select One", value: null },
+        {
+          text: "BULLSEYE",
+          value: "/images/eyemakeup/BULLSEYE.png",
+        },
+        {
+          text: "CATEYE",
+          value: "/images/eyemakeup/CATEYE.png",
+        },
+        {
+          text: "HEARTCHEEKS",
+          value: "/images/eyemakeup/HEARTCHEEKS.png",
+        },
+        {
+          text: "JOKEREYEBLACK",
+          value: "/images/eyemakeup/JOKEREYEBLACK.png",
+        },
+        {
+          text: "JOKEREYERED",
+          value: "/images/eyemakeup/JOKEREYERED.png",
+        },
+        {
+          text: "KISSONTHECHEEK",
+          value: "/images/eyemakeup/KISSONTHECHEEK.png",
+        },
+        {
+          text: "NOMAKEUP",
+          value: "/images/eyemakeup/NOMAKEUP.png",
+        },
+        {
+          text: "OUTLINE",
+          value: "/images/eyemakeup/OUTLINE.png",
+        },
+        {
+          text: "RACOONEYES",
+          value: "/images/eyemakeup/RACOONEYES.png",
+        },
+        {
+          text: "SMOKYEYES",
+          value: "/images/eyemakeup/SMOKYEYES.png",
+        },
+        {
+          text: "STARMAKEUP",
+          value: "/images/eyemakeup/STARMAKEUP.png",
+        },
+        {
+          text: "WINK",
+          value: "/images/eyemakeup/WINK.png",
         },
       ],
       show: true,

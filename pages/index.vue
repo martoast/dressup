@@ -43,6 +43,14 @@
         src="/images/face/BUSHYEYEBROWS.png"
         alt="Center image"
       ></b-img>
+
+      <b-img
+        style="height: calc(100vh - 56px)"
+        id="eyemakeup"
+        class="eyemakeup"
+        center
+        :src="form.eyemakeup"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -111,5 +119,10 @@ export default {
   position: absolute;
 
   z-index: 5;
+}
+.eyemakeup {
+  position: absolute;
+
+  z-index: 6;
 }
 </style>
