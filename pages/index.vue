@@ -2,6 +2,23 @@
   <div style="background-color: #000 !important; height: 100vh">
     <MainNav />
     <MainControl @form="onFormUpdate" />
+    <div v-if="isempty">
+      <b-container class="bv-example-row">
+        <b-row
+          class="justify-content-md-center"
+          align-v="center"
+          style="height: calc(100vh - 56px)"
+        >
+          <b-col cols="12" md="auto"
+            ><b-card>
+              <b-card-text>
+                Use side controller to begin customizing.
+              </b-card-text>
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
     <div class="parent">
       <b-img
         style="height: calc(100vh - 56px)"
@@ -113,27 +130,19 @@
 export default {
   data() {
     return {
-      form: {
-        background: null,
-        shadow: null,
-        body: null,
-        necklaces: null,
-        face: null,
-        eyemakeup: null,
-        piercings: null,
-        facemarkings: null,
-        lipstick: null,
-        mouthcoverings: null,
-        sunglasses: null,
-        hair: null,
-        overthehead: null,
-      },
+      form: {},
     };
+  },
+  computed: {
+    isempty() {
+      return (
+        Object.keys(this.form).length === 0 && this.form.constructor === Object
+      );
+    },
   },
   methods: {
     onFormUpdate(form) {
       this.form = form;
-      console.log(this.form);
     },
   },
 };
